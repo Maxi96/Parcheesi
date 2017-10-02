@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "rm_gameboard_lg",
     "id": "866979a3-8538-4099-b4f3-07ec75aa9a4f",
     "creationCodeFile": "",
     "inheritCode": false,

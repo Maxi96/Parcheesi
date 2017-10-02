@@ -159,18 +159,18 @@
             }
         },
         {
-            "Key": "6b064316-eab4-4b32-86c8-c7dbe4a2f99d",
-            "Value": {
-                "id": "852c4617-508a-4434-9c7a-c62d5cf1ea17",
-                "resourcePath": "sprites\\spr_gameboard\\spr_gameboard.yy",
-		"resourceType": "GMSprite"
-            }
-	},
-	{
             "Key": "66e32a18-c2fc-4272-bcb0-4afbedf45285",
             "Value": {
                 "id": "d7754985-37bf-4704-8bd7-f8bfb6d10f22",
                 "resourcePath": "sprites\\spr_White_die\\spr_White_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6b064316-eab4-4b32-86c8-c7dbe4a2f99d",
+            "Value": {
+                "id": "852c4617-508a-4434-9c7a-c62d5cf1ea17",
+                "resourcePath": "sprites\\spr_gameboard\\spr_gameboard.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -218,7 +218,7 @@
             "Key": "866979a3-8538-4099-b4f3-07ec75aa9a4f",
             "Value": {
                 "id": "c1e5aaa3-bc06-47f6-aaa7-9a442c04fa7a",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rm_gameboard_lg\\rm_gameboard_lg.yy",
                 "resourceType": "GMRoom"
             }
         },
