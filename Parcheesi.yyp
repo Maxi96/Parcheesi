@@ -163,6 +163,10 @@
             "Value": {
                 "id": "852c4617-508a-4434-9c7a-c62d5cf1ea17",
                 "resourcePath": "sprites\\spr_gameboard\\spr_gameboard.yy",
+		"resourceType": "GMSprite"
+            }
+	},
+	{
             "Key": "66e32a18-c2fc-4272-bcb0-4afbedf45285",
             "Value": {
                 "id": "d7754985-37bf-4704-8bd7-f8bfb6d10f22",
