@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "99406fc0-bb22-4ae4-8f23-4f43be0320ff",
+            "Value": {
+                "id": "fb6003c2-0664-4736-a0f8-c77f196fa1a1",
+                "resourcePath": "objects\\control\\control.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a74d37d9-6c0f-4fe3-b245-407cd595a689",
             "Value": {
                 "id": "6fe13758-6796-40a9-bdf0-41965ae9d192",
