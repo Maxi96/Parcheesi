@@ -10,7 +10,7 @@
         "e5f80eff-e355-4646-9a63-2f064663dd5f"
     ],
     "filterType": "GMObject",
-    "folderName": "Obj_Players",
+    "folderName": "pawns",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
