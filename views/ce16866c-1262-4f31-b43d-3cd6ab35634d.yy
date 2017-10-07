@@ -4,10 +4,11 @@
     "mvc": "1.1",
     "name": "ce16866c-1262-4f31-b43d-3cd6ab35634d",
     "children": [
-        "11f53db9-fe0d-4449-b53b-47e9b8b19d04",
-        "465a6805-cf03-4f1a-9cbc-91dbd31fa188",
-        "bae605e4-66b7-476b-a17f-fb05489ef764",
-        "e5f80eff-e355-4646-9a63-2f064663dd5f"
+        "e376ee8c-9373-4f17-ab42-5aa4edd6affc",
+        "cd2aca5a-6a40-4dca-9d90-6bd6559b0692",
+        "f7b5a9f9-3e23-44b1-9636-9768f4afdf83",
+        "29ad9bd1-cbd9-4dd8-8fbe-baa838ef5401",
+        "336974bb-e63b-40ab-876d-9d403d0fde4c"
     ],
     "filterType": "GMObject",
     "folderName": "pawns",
