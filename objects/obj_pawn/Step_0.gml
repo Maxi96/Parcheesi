@@ -38,4 +38,21 @@ else
 	y = space_position[destination].y;
 	
 	// TODO: turn and face the "correct" direction
+	heading = image_angle;
+	bearing = space_position[destination].course;
+	relative_bearing = ((((bearing - heading) mod 360) + 540) mod 360) - 180;  // see http://stackoverflow.com/a/25269402/994628
+	
+	// if we are not facing the correct direction, then we need to turn
+	if(abs(relative_bearing) > 1)
+	{
+		// we will turn to the left or the right depending on our relative bearing
+		if(relative_bearing > 0) rotation = 1;
+		else rotation = -1;
+		heading += rotation;
+		// always keep our heading between 0 and 360 degrees
+		if(heading >= 360) heading -= 360;
+		if(heading < 0) heading += 360;
+		image_angle = heading;
+	}
+	
 }
