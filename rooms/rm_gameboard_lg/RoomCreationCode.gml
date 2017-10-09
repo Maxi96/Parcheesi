@@ -1,4 +1,12 @@
-//globalvar pawn;
+/// Large Room Creation Code
+//randomize();
+
+globalvar current_player;
+current_player = irandom(3);
+
+globalvar move_spaces;
+move_spaces[0] = 0;
+move_spaces[1] = 0;
 
 // create an array of invisible objects, one object in the centre of each space
 globalvar space_position;
@@ -132,6 +140,7 @@ space_position[126] = instance_create_layer(146,559, "spaces", space);
 space_position[127] = instance_create_layer(146,625, "spaces", space);
 
 // create each pawn and send them to their nest
+globalvar pawn;
 pawn[0,0] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_red);
 pawn[0,1] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_red);
 pawn[0,2] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_red);
@@ -167,3 +176,10 @@ pawn[3,0].destination = 124;
 pawn[3,1].destination = 125;
 pawn[3,2].destination = 126;
 pawn[3,3].destination = 127;
+
+globalvar die, die_value;
+die[0] = instance_create_layer(740,686, "admin", obj_White_die);
+die[1] = instance_create_layer(810,686, "admin", obj_Red_die);
+
+globalvar button_roll;
+button_roll = instance_create_layer(740,616, "admin", obj_button_roll);
