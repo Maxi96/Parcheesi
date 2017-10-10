@@ -371,41 +371,38 @@ space_position[127].nest = true;
 
 // create each pawn and send them to their nest
 globalvar pawn;
-pawn[0,0] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_red);
-pawn[0,1] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_red);
-pawn[0,2] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_red);
-pawn[0,3] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_red);
-pawn[0,0].destination = 112;
-pawn[0,1].destination = 113;
-pawn[0,2].destination = 114;
-pawn[0,3].destination = 115;
+var i;
+for(i = 0; i <= 3; i += 1)
+{
+	pawn[0,i] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_red);
+	pawn[0,i].id_team = 0;
+	pawn[0,i].id_piece = i;
+	pawn[0,i].destination = 112 + i;
+}
 
-pawn[1,0] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_green);
-pawn[1,1] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_green);
-pawn[1,2] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_green);
-pawn[1,3] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_green);
-pawn[1,0].destination = 116;
-pawn[1,1].destination = 117;
-pawn[1,2].destination = 118;
-pawn[1,3].destination = 119;
+for(i = 0; i <= 3; i += 1)
+{
+	pawn[1,i] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_green);
+	pawn[1,i].id_team = 1;
+	pawn[1,i].id_piece = i;
+	pawn[1,i].destination = 116 + i;
+}
 
-pawn[2,0] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_orange);
-pawn[2,1] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_orange);
-pawn[2,2] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_orange);
-pawn[2,3] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_orange);
-pawn[2,0].destination = 120;
-pawn[2,1].destination = 121;
-pawn[2,2].destination = 122;
-pawn[2,3].destination = 123;
+for(i = 0; i <= 3; i += 1)
+{
+	pawn[2,i] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_orange);
+	pawn[2,i].id_team = 2;
+	pawn[2,i].id_piece = i;
+	pawn[2,i].destination = 120 + i;
+}
 
-pawn[3,0] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_blue);
-pawn[3,1] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_blue);
-pawn[3,2] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_blue);
-pawn[3,3] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_blue);
-pawn[3,0].destination = 124;
-pawn[3,1].destination = 125;
-pawn[3,2].destination = 126;
-pawn[3,3].destination = 127;
+for(i = 0; i <= 3; i += 1)
+{
+	pawn[3,i] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_blue);
+	pawn[3,i].id_team = 3;
+	pawn[3,i].id_piece = i;
+	pawn[3,i].destination = 124 + i;
+}
 
 globalvar die, die_value;
 die[0] = instance_create_layer(740,686, "admin", obj_White_die);
