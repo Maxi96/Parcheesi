@@ -9,6 +9,22 @@ for(i = 0; i < 2; i += 1)
 	die_value[i] = roll + 1;
 }
 
+// -=-=-= BEGIN temporary fix because tanks sit on top of each other
+
+var t;
+for(t = 0; t < 4; t += 1)
+{
+	var team;
+	team = t + current_player;
+	if(team > 3) team -= 4;
+	
+	var i;
+	for(i = 0; i < 4; i += 1)
+		pawn[team,i].depth = t;
+}
+
+// -=-=-= END temporary fix because tanks sit on top of each other
+
 // -=-=-= This next section is just for testing
 
 var p;
