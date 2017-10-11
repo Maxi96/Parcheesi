@@ -369,6 +369,33 @@ space_position[127] = instance_create_layer(79,625, "spaces", space);
 space_position[127].course = 90;
 space_position[127].nest = true;
 
+globalvar nest;
+
+// red nest
+nest[0] = instance_create_layer(592,592, "spaces", obj_nest);
+nest[0].start_space = 4;
+nest[0].last_space = 67;
+nest[0].start_home = 68;
+nest[0].last_home = 74;
+// green nest
+nest[1] = instance_create_layer(592,112, "spaces", obj_nest);
+nest[1].start_space = 21;
+nest[1].last_space = 16;
+nest[1].start_home = 79;
+nest[1].last_home = 85;
+// orange nest
+nest[2] = instance_create_layer(112,112, "spaces", obj_nest);
+nest[2].start_space = 38;
+nest[2].last_space = 33;
+nest[2].start_home = 90;
+nest[2].last_home = 96;
+// blue nest
+nest[3] = instance_create_layer(112,592, "spaces", obj_nest);
+nest[3].start_space = 55;
+nest[3].last_space = 50;
+nest[3].start_home = 101;
+nest[3].last_home = 107;
+
 // create each pawn and send them to their nest
 globalvar pawn;
 var i;
@@ -378,6 +405,7 @@ for(i = 0; i <= 3; i += 1)
 	pawn[0,i].id_team = 0;
 	pawn[0,i].id_piece = i;
 	pawn[0,i].destination = 112 + i;
+	nest[0].occupants += 1;
 }
 
 for(i = 0; i <= 3; i += 1)
@@ -386,6 +414,7 @@ for(i = 0; i <= 3; i += 1)
 	pawn[1,i].id_team = 1;
 	pawn[1,i].id_piece = i;
 	pawn[1,i].destination = 116 + i;
+	nest[1].occupants += 1;
 }
 
 for(i = 0; i <= 3; i += 1)
@@ -394,6 +423,7 @@ for(i = 0; i <= 3; i += 1)
 	pawn[2,i].id_team = 2;
 	pawn[2,i].id_piece = i;
 	pawn[2,i].destination = 120 + i;
+	nest[2].occupants += 1;
 }
 
 for(i = 0; i <= 3; i += 1)
@@ -402,6 +432,7 @@ for(i = 0; i <= 3; i += 1)
 	pawn[3,i].id_team = 3;
 	pawn[3,i].id_piece = i;
 	pawn[3,i].destination = 124 + i;
+	nest[3].occupants += 1;
 }
 
 globalvar die, die_value;

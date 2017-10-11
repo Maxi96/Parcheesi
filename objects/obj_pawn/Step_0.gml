@@ -37,7 +37,6 @@ else
 	x = space_position[destination].x;
 	y = space_position[destination].y;
 	
-	// TODO: turn and face the "correct" direction
 	heading = image_angle;
 	bearing = space_position[destination].course;
 	relative_bearing = ((((bearing - heading) mod 360) + 540) mod 360) - 180;  // see http://stackoverflow.com/a/25269402/994628
