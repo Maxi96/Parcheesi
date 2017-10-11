@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "b2c3fdee-8738-447c-8493-a9b146a2dff7",
+            "Value": {
+                "id": "d6e88e57-e1b0-4f36-a93c-794d65271ed2",
+                "resourcePath": "objects\\obj_move_n\\obj_move_n.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bc0d405c-0b03-4dbc-9838-5e300a81ef64",
             "Value": {
                 "id": "33d7e248-d664-4c6e-a402-faaac5f4d266",
@@ -356,6 +364,14 @@
                 "id": "31869ea5-5b1e-4d8c-9a96-56881b979f1c",
                 "resourcePath": "tilesets\\til_gameboard\\til_gameboard.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "d540725f-ba74-437c-bacc-6c44ba4a6e52",
+            "Value": {
+                "id": "7f1c6d7a-2629-4cbd-8302-8ed84f4d5d3a",
+                "resourcePath": "sprites\\spr_move_n\\spr_move_n.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
