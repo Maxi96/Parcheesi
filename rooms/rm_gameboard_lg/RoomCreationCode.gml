@@ -1,9 +1,6 @@
 /// Large Room Creation Code
 //randomize();
 
-globalvar current_player;
-current_player = irandom(3);
-
 globalvar move_spaces;
 move_spaces[0] = 0;
 move_spaces[1] = 0;
@@ -435,9 +432,14 @@ for(i = 0; i <= 3; i += 1)
 	nest[3].occupants += 1;
 }
 
+
 globalvar die, die_value;
 die[0] = instance_create_layer(740,686, "admin", obj_White_die);
 die[1] = instance_create_layer(810,686, "admin", obj_Red_die);
 
 globalvar button_roll;
 button_roll = instance_create_layer(740,616, "admin", obj_button_roll);
+
+globalvar current_player;
+current_player = irandom(3);
+instance_create_layer(705,5, "admin", obj_whos_turn);
