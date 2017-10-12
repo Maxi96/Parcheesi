@@ -1,5 +1,13 @@
-/// Large Room Creation Code
+/// @description Large Room Creation Code
+
+show_debug_message("EVENT - Create - rm_gameboard_lg\n{");
 //randomize();
+
+globalvar setting_quick_start;
+setting_quick_start = true;
+
+globalvar good_dice;
+good_dice = false;
 
 globalvar move_spaces;
 move_spaces[0] = 0;
@@ -396,41 +404,59 @@ nest[3].last_home = 107;
 // create each pawn and send them to their nest
 globalvar pawn;
 var i;
-for(i = 0; i <= 3; i += 1)
+for(i = 0; i <= 3; i++)
 {
-	pawn[0,i] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_red);
+	pawn[0,i] = instance_create_layer(704,704, "Instances", obj_pawn_red);
 	pawn[0,i].id_team = 0;
 	pawn[0,i].id_piece = i;
 	pawn[0,i].destination = 112 + i;
-	nest[0].occupants += 1;
+	pawn[0,i].is_in_nest = true;
+	nest[0].occupants++;
 }
 
-for(i = 0; i <= 3; i += 1)
+for(i = 0; i <= 3; i++)
 {
-	pawn[1,i] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_green);
+	pawn[1,i] = instance_create_layer(704,0, "Instances", obj_pawn_green);
 	pawn[1,i].id_team = 1;
 	pawn[1,i].id_piece = i;
 	pawn[1,i].destination = 116 + i;
-	nest[1].occupants += 1;
+	pawn[1,i].is_in_nest = true;
+	nest[1].occupants++;
 }
 
-for(i = 0; i <= 3; i += 1)
+for(i = 0; i <= 3; i++)
 {
-	pawn[2,i] = instance_create_layer(random(room_width + 128) - 64, 0 - random(32), "Instances", obj_pawn_orange);
+	pawn[2,i] = instance_create_layer(0,0, "Instances", obj_pawn_orange);
 	pawn[2,i].id_team = 2;
 	pawn[2,i].id_piece = i;
 	pawn[2,i].destination = 120 + i;
-	nest[2].occupants += 1;
+	pawn[2,i].is_in_nest = true;
+	nest[2].occupants++;
 }
 
-for(i = 0; i <= 3; i += 1)
+for(i = 0; i <= 3; i++)
 {
-	pawn[3,i] = instance_create_layer(random(room_width + 128) - 64, room_height + random(32), "Instances", obj_pawn_blue);
+	pawn[3,i] = instance_create_layer(0,704, "Instances", obj_pawn_blue);
 	pawn[3,i].id_team = 3;
 	pawn[3,i].id_piece = i;
 	pawn[3,i].destination = 124 + i;
-	nest[3].occupants += 1;
+	pawn[3,i].is_in_nest = true;
+	nest[3].occupants++;
 }
+
+if setting_quick_start
+{
+	pawn[0,1].destination = 4;
+	pawn[0,1].is_in_nest = false;
+	pawn[1,1].destination = 21;
+	pawn[1,1].is_in_nest = false;
+	pawn[2,1].destination = 38;
+	pawn[2,1].is_in_nest = false;
+	pawn[3,1].destination = 55;
+	pawn[3,1].is_in_nest = false;
+}
+
+// END  for testing only... remove after use
 
 
 globalvar die, die_value;
@@ -440,6 +466,13 @@ die[1] = instance_create_layer(810,686, "admin", obj_Red_die);
 globalvar button_roll;
 button_roll = instance_create_layer(740,616, "admin", obj_button_roll);
 
+globalvar button_move, button_move_count;
+button_move_count = 0;
+
 globalvar current_player;
 current_player = irandom(3);
 instance_create_layer(705,5, "admin", obj_whos_turn);
+
+globalvar selected_piece;
+
+show_debug_message("} -- EVENT - Create - rm_gameboard_lg");

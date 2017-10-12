@@ -1,3 +1,4 @@
+/// @description Move the piece to its destination.
 // A few definitions
 // course: the direction the vehicle is moving
 // heading: the direction the vehicle is pointing
