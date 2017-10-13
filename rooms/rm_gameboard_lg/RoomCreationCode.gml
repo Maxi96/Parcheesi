@@ -1,7 +1,7 @@
 /// @description Large Room Creation Code
 
 show_debug_message("EVENT - Create - rm_gameboard_lg\n{");
-//randomize();
+randomize();
 
 globalvar setting_quick_start;
 setting_quick_start = true;
