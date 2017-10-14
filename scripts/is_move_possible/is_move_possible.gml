@@ -3,6 +3,7 @@
 /// @return true if the current player has a possible move, otherwise false
 
 show_debug_message("is_move_possible()\n{");
+
 // assume the the current player has no possible moves
 var result;
 result = false;

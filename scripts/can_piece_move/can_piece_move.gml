@@ -30,7 +30,7 @@ else
 	// check each die
 	var d;
 	for(d = 0; d < 2; d++)
-	  if(can_piece_advance(team, piece, die_value[d])) result = true;
+	  if(can_piece_advance(team, piece, die[d].value)) result = true;
 }
 
 show_debug_message("} -- can_piece_move(" + string(team) + "," + string(piece) + ") RETURNS " + string(result));

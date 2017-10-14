@@ -9,35 +9,46 @@ piece = argument1;
 
 show_debug_message("display_possible_moves(" + string(team) + ", " + string(piece) + ")\n{");
 
-var d, move_possible, display_x, display_y;
-d[0] = min(die_value[0],die_value[1]);
-d[1] = max(die_value[0],die_value[1]);
+instance_destroy(obj_move_n);
+
+var move_possible, display_x, display_y;
 move_possible = false;
 display_x = 706;
 display_y = 128;
 
-var i;
-for(i = 0; i < 2; i++)
+if(count_unused_dice() == 1)
 {
-	if(can_piece_advance(team,piece, d[i]))
+	var d;
+	d = get_unused_die_value();
+	if(can_piece_advance(team, piece, d))
 	{
-		show_debug_message("\tdisplay_possible_moves() SAYS piece can advance " + string(d[i]))
-		show_debug_message("\tdisplay_possible_moves() SAYS (x,y) = (" + string(display_x) + "," + string(display_y) + ")");
-		button_move[i] = instance_create_layer(display_x,display_y, "admin", obj_move_n);
-		button_move[i].image_index = d[i] - 1;
-		button_move[i].id_move_button = i;
-		button_move_count++;
+		make_move_button(display_x,display_y, 0, d);
 		display_y += 66;
 		move_possible = true;
 	}
 }
-
-if(move_possible and can_piece_advance(team,piece, d[0]+d[1]))
+else
 {
-		button_move[i] = instance_create_layer(display_x,display_y, "admin", obj_move_n);
-		button_move[i].image_index = d[0] + d[1] - 1;
-		button_move[i].id_move_button = i;
-		button_move_count++;
+	var d;
+	d[0] = min(die[0].value, die[1].value);
+	d[1] = max(die[0].value, die[1].value);
+
+	var i;
+	for(i = 0; i < 2; i++)
+	{
+		if(can_piece_advance(team,piece, d[i]))
+		{
+			make_move_button(display_x,display_y, i, d[i]);
+			display_y += 66;
+			move_possible = true;
+		}
+	}
+
+	if(move_possible and can_piece_advance(team,piece, d[0]+d[1]))
+	{
+		make_move_button(display_x,display_y, i, d[0]+d[1]);
+		display_y += 66;
+	}
 }
 
 show_debug_message("}\n -- display_possible_moves(" + string(team) + ", " + string(piece) + ")");

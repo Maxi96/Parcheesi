@@ -6,9 +6,6 @@ randomize();
 globalvar setting_quick_start;
 setting_quick_start = true;
 
-globalvar good_dice;
-good_dice = false;
-
 globalvar move_spaces;
 move_spaces[0] = 0;
 move_spaces[1] = 0;
@@ -456,12 +453,13 @@ if setting_quick_start
 	pawn[3,1].is_in_nest = false;
 }
 
-// END  for testing only... remove after use
 
-
-globalvar die, die_value;
+globalvar die;
 die[0] = instance_create_layer(740,686, "admin", obj_White_die);
 die[1] = instance_create_layer(810,686, "admin", obj_Red_die);
+
+globalvar good_dice;
+good_dice = false;
 
 globalvar button_roll;
 button_roll = instance_create_layer(740,616, "admin", obj_button_roll);

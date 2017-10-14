@@ -1,8 +1,10 @@
 /// count_forward(team, piece, advance)
 /// @description finds the given piece's new destination after moving the given number of spaces.
-///              Most of the time, this is accomplished simply by adding the value of the dice to the piece's current position number,
-///              however, sometimes the piece must "jump" to another space index numer
-///              (eg when a piece leaves its nest or when it turns into its home row).
+///              Most of the time, this is accomplished simply by adding the
+///              value of the dice to the piece's current position number,
+///              however, sometimes the piece must "jump" to another space
+///              index numer (eg when a piece leaves its nest or when it turns
+///              into its home row).
 /// @param team the piece's team id number
 /// @param piece the piece's id number
 /// @param advance the number of spaces we would like to advance the piece

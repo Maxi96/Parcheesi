@@ -17,12 +17,9 @@ if( point_distance(x,y, space_position[destination].x,space_position[destination
 	{
 		speed = 0;  // stop before turning
 		// we will turn to the left or the right depending on our relative bearing
-		if(relative_bearing > 0) rotation = 1;
-		else rotation = -1;
-		heading += rotation;
-		// always keep our heading between 0 and 360 degrees
-		if(heading >= 360) heading -= 360;
-		if(heading < 0) heading += 360;
+		if(relative_bearing > 0) heading += 1;
+		else heading -= 1;
+		heading = wrap(heading, 0, 360) // always keep our heading between 0 and 360 degrees
 		image_angle = heading;
 	}
 	// if we are already facing in the right direction, then start moving
@@ -49,10 +46,7 @@ else
 		if(relative_bearing > 0) rotation = 1;
 		else rotation = -1;
 		heading += rotation;
-		// always keep our heading between 0 and 360 degrees
-		if(heading >= 360) heading -= 360;
-		if(heading < 0) heading += 360;
+		heading = wrap(heading, 0, 360) // always keep our heading between 0 and 360 degrees
 		image_angle = heading;
-	}
-	
+	}	
 }
