@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "70a16b6e-b05e-49b2-8f9f-2affabf5d7dd",
+            "Value": {
+                "id": "37da2569-e912-41a1-bed0-d79dafcfdacf",
+                "resourcePath": "scripts\\is_nest_empty\\is_nest_empty.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7cfda2da-6bc7-45ab-add0-3b58c432ce61",
             "Value": {
                 "id": "bf730e23-ac5d-437b-9f0c-41d5c4d436fe",
@@ -371,6 +379,14 @@
             "Value": {
                 "id": "e896bc92-6f2a-4203-a1e7-9ab58206bc4b",
                 "resourcePath": "scripts\\next_player\\next_player.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a2601880-d5ca-4970-bc81-7d89b762a1e9",
+            "Value": {
+                "id": "c1f3a763-6c6e-4573-b6b0-6af752a9017e",
+                "resourcePath": "scripts\\move_piece\\move_piece.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -613,6 +629,14 @@
                 "resourcePath": "views\\f8455714-6a3d-4b05-aba8-f057095de5ab.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fce0285e-e870-41e6-bc3c-d5318b7e52af",
+            "Value": {
+                "id": "1f11cd87-45fc-4725-a107-e958b541eaf1",
+                "resourcePath": "scripts\\mark_die_used\\mark_die_used.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -632,7 +656,12 @@
         "98b1ae80-8be0-485d-b74a-97db85cbeeaa",
         "e49feb3b-82dd-4faf-a2f9-9197b718fa4f",
         "90abd470-5d11-473e-b35d-ca89a4cf5f75",
-        "a722625b-94bf-4a63-9e85-534f962b76ba"
+        "a722625b-94bf-4a63-9e85-534f962b76ba",
+        "d60a63cf-02c0-453f-b51c-4244994b479b",
+        "94685597-391e-48c0-beca-97f40af48a33",
+        "5a903b05-5cb7-4ee9-982b-d3d3f0182cbd",
+        "a2601880-d5ca-4970-bc81-7d89b762a1e9",
+        "fce0285e-e870-41e6-bc3c-d5318b7e52af"
     ],
     "tutorial": ""
 }

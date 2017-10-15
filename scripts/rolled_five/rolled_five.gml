@@ -4,6 +4,7 @@
 
 show_debug_message("rolled_five()\n{");
 var result;
+
 result = die[0].value == 5 or die[1].value == 5 or die[0].value+die[1].value == 5;
 show_debug_message("} -- rolled_five() RETURNS " + string(result));
 

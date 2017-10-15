@@ -7,4 +7,3 @@ die_number = argument0;
 
 die[die_number].image_index = irandom(5);
 die[die_number].value = die[die_number].image_index + 1;
-die[die_number].used = false;
