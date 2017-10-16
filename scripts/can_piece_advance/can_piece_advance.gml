@@ -26,6 +26,7 @@ for(i = 1; i < spaces; i++)
 
 // check if the last space is landable
 if(result == true and not space_is_landable(count_forward(team, piece, spaces))) result = false;
+//if(!space_position[count_forward(team, piece, spaces)].safe && space_position[count_forward(team, piece, spaces)].occupants == 1 && space_position[count_forward(team, piece, spaces)].occupantsTeam != current_player) "Start a Battle" => callin a function;
 
 show_debug_message("} -- can_piece_advance(" + string(team) + ", " + string(piece) + ", " + string(spaces) + ") RETURNS " + string(result));
 

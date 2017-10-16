@@ -9,9 +9,19 @@ team = argument0;
 piece = argument1;
 move_value = argument2;
 
-pawn[team,piece].destination = count_forward(team, piece, move_value);
+// decrement old space occupant + 
+// move piece to new space
+// increment new space occupant
+
 if(pawn[team,piece].is_in_nest)
 {
 	pawn[team,piece].is_in_nest = false;
 	nest[team].occupants--;
 }
+
+
+
+
+
+
+// pawn[team,piece].destination = count_forward(team, piece, move_value);

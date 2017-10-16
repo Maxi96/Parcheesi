@@ -445,12 +445,20 @@ if setting_quick_start
 {
 	pawn[0,1].destination = 4;
 	pawn[0,1].is_in_nest = false;
+	space_position[4].occupants++;
+	space_position[4].occupantsTeam = 0;
 	pawn[1,1].destination = 21;
 	pawn[1,1].is_in_nest = false;
+	space_position[21].occupants++;
+	space_position[21].occupantsTeam = 1;
 	pawn[2,1].destination = 38;
 	pawn[2,1].is_in_nest = false;
+	space_position[38].occupants++;
+	space_position[38].occupantsTeam = 2;
 	pawn[3,1].destination = 55;
 	pawn[3,1].is_in_nest = false;
+	space_position[55].occupants++;
+	space_position[55].occupantsTeam = 3;
 }
 
 
