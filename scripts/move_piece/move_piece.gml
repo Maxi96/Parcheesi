@@ -11,17 +11,11 @@ move_value = argument2;
 
 // decrement old space occupant + 
 // move piece to new space
-// increment new space occupant
  pawn[team,piece].destination = count_forward(team, piece, move_value);
+// increment new space occupant
+
 if(pawn[team,piece].is_in_nest)
 {
 	pawn[team,piece].is_in_nest = false;
 	nest[team].occupants--;
 }
-
-
-
-
-
-
-// pawn[team,piece].destination = count_forward(team, piece, move_value);
