@@ -9,10 +9,20 @@ team = argument0;
 piece = argument1;
 move_value = argument2;
 
+var old_space, new_space;
+old_space = pawn[team,piece].destination;
+new_space = count_forward(team, piece, move_value);
+
 // decrement old space occupant + 
+space_position[old_space].occupants--;
 // move piece to new space
- pawn[team,piece].destination = count_forward(team, piece, move_value);
+pawn[team,piece].destination = new_space;
 // increment new space occupant
+ space_position[new_space].occupants++;
+ space_position[new_space].occupantsTeam = current_player;
+ 
+ 
+
 
 if(pawn[team,piece].is_in_nest)
 {
