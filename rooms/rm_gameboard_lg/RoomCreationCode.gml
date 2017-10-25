@@ -14,6 +14,7 @@ move_spaces[1] = 0;
 globalvar space_position;
 space_position[0] = instance_create_layer(437,689, "spaces", space);
 space_position[0].course = 90;
+space_position[0].occupants = 0;
 space_position[1] = instance_create_layer(437,657, "spaces", space);
 space_position[1].course = 90;
 space_position[2] = instance_create_layer(437,625, "spaces", space);
@@ -371,6 +372,10 @@ space_position[127] = instance_create_layer(79,625, "spaces", space);
 space_position[127].course = 90;
 space_position[127].nest = true;
 
+for(var i = 0; i < array_length_1d(space_position)-1; i++){
+	space_position[i].occupants = 0;
+}
+
 globalvar nest;
 
 // red nest
@@ -401,6 +406,7 @@ nest[3].last_home = 107;
 // create each pawn and send them to their nest
 globalvar pawn;
 var i;
+
 for(i = 0; i <= 3; i++)
 {
 	pawn[0,i] = instance_create_layer(704,704, "Instances", obj_pawn_red);
@@ -445,18 +451,22 @@ if setting_quick_start
 {
 	pawn[0,1].destination = 4;
 	pawn[0,1].is_in_nest = false;
+	nest[0].occupants--;
 	space_position[4].occupants++;
 	space_position[4].occupantsTeam = 0;
 	pawn[1,1].destination = 21;
 	pawn[1,1].is_in_nest = false;
+	nest[1].occupants--;
 	space_position[21].occupants++;
 	space_position[21].occupantsTeam = 1;
 	pawn[2,1].destination = 38;
 	pawn[2,1].is_in_nest = false;
+	nest[2].occupants--;
 	space_position[38].occupants++;
 	space_position[38].occupantsTeam = 2;
 	pawn[3,1].destination = 55;
 	pawn[3,1].is_in_nest = false;
+	nest[3].occupants--;
 	space_position[55].occupants++;
 	space_position[55].occupantsTeam = 3;
 }

@@ -7,7 +7,7 @@
 
 // if we're far from our destination, then we need to move
 if( point_distance(x,y, space_position[destination].x,space_position[destination].y) > 1 )
-{
+{	
 	heading = image_angle;
 	bearing = point_direction(x,y,space_position[destination].x,space_position[destination].y);
 	relative_bearing = ((((bearing - heading) mod 360) + 540) mod 360) - 180;  // see http://stackoverflow.com/a/25269402/994628

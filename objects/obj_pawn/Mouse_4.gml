@@ -20,12 +20,13 @@ if(does_piece_belong_to_player(id_team, current_player))
 	(
 		not is_nest_empty(current_player) and
 			(
-				(rolled_five() and not is_in_nest) or
-				(not rolled_five() and is_in_nest)
+				(rolled_five() and not pawn[current_player, id_piece].is_in_nest) or
+				(not rolled_five() and pawn[current_player, id_piece].is_in_nest)
 			)
 	)
 	{
 		// TODO play negative sound
+		show_debug_message("current_player = " + string(current_player) + "\n pawn is in nest: " +  string(pawn[current_player, id_piece].is_in_nest) + "\n is nest empty: " + string(is_nest_empty(current_player)) + "\n current nest occupants: " + string(nest[current_player].occupants));
 	}
 	else
 	{
