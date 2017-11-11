@@ -5,11 +5,27 @@
 // bearing: the direction to the destination
 // relative bearing: the angle between the heading and the bearing
 
+var distanaionx, distanaiony;
+distanaionx = space_position[destination].x;
+distanaiony = space_position[destination].y;
+
+
+if(is_a_friend){
+
+	distanaionx += shiftx_right(space_position[destination].course);
+	distanaiony += shifty_right(space_position[destination].course);
+}
+if(has_a_friend){
+	
+	distanaionx += shiftx_left(space_position[destination].course);
+	distanaiony += shifty_left(space_position[destination].course);
+}
+
 // if we're far from our destination, then we need to move
-if( point_distance(x,y, space_position[destination].x,space_position[destination].y) > 1 )
+if( point_distance(x,y, distanaionx,distanaiony) > 1 )
 {	
 	heading = image_angle;
-	bearing = point_direction(x,y,space_position[destination].x,space_position[destination].y);
+	bearing = point_direction(x,y,distanaionx,distanaiony);
 	relative_bearing = ((((bearing - heading) mod 360) + 540) mod 360) - 180;  // see http://stackoverflow.com/a/25269402/994628
 	
 	// if we are not facing our destination, then we need to turn
@@ -32,8 +48,8 @@ if( point_distance(x,y, space_position[destination].x,space_position[destination
 else
 {
 	speed = 0;
-	x = space_position[destination].x;
-	y = space_position[destination].y;
+	x = distanaionx;
+	y = distanaiony;
 	
 	heading = image_angle;
 	bearing = space_position[destination].course;

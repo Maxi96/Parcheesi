@@ -12,3 +12,4 @@ if(is_move_possible())
 	display_possible_moves(current_player,selected_piece);
 else
 	next_player();
+

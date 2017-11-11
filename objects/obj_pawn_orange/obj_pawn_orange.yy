@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_pawn_orange",
     "eventList": [
-        
+        {
+            "id": "d6a88a23-d5ad-4f8a-9935-626450517149",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "29ad9bd1-cbd9-4dd8-8fbe-baa838ef5401"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "e376ee8c-9373-4f17-ab42-5aa4edd6affc",

@@ -497,12 +497,3 @@ globalvar shot_move_value;
 globalvar current_shooter;
 globalvar selected_shooter;
 globalvar intended_destination;
-/*
-globalvar shooter_team;
-globalvar shooter_id;
-globalvar intended_destination;
-//-1 -> it´s waiting for bullet collision
-// 0 -> bullet missed the target
-// 1 -> shot was successful
-globalvar shot_successful = 0; 
-*/

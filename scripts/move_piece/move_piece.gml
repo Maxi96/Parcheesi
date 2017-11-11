@@ -12,10 +12,33 @@ move_value = argument2;
 var old_space, new_space;
 old_space = pawn[team,piece].destination;
 new_space = count_forward(team, piece, move_value);
-
 // decrement old space occupant + 
 space_position[old_space].occupants--;
+pawn[team,piece].is_a_friend = false;
+pawn[team,piece].has_a_friend = false;
+
+var i, j;
+for(i = 0; i <= 3; i++){
+	for(j = 0; j <= 3; j++){
+		if(pawn[i,j].destination == pawn[team,piece].destination){
+			pawn[i,j].has_a_friend = false;
+			pawn[i,j].is_a_friend = false;
+		}
+	}
+}
+
 // move piece to new space
+if(space_position[new_space].occupants > 0){
+	pawn[team,piece].is_a_friend = true;
+}
+
+for(i = 0; i <= 3; i++){
+	for(j = 0; j <= 3; j++){
+		if(pawn[i,j].destination == new_space){
+			pawn[i,j].has_a_friend = true;
+		}
+	}
+}
 pawn[team,piece].destination = new_space;
 // increment new space occupant
  space_position[new_space].occupants++;
