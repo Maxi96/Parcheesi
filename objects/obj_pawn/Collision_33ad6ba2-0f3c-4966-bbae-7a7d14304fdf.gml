@@ -1,12 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-if(intended_destination == destination){
-
-	pawn[current_shooter,selected_shooter].destination = intended_destination;
-	
-}
+obj_controler.victim_space = destination;
 
 switch(id_team){
 	

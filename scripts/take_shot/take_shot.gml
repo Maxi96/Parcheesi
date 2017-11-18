@@ -35,9 +35,15 @@ if(space_position[new_space].occupants == 1 and space_position[new_space].safe =
 		bullet = instance_create_depth(40*dcos(pawn[team,piece].image_angle)+pawn[team,piece].x,-40*dsin(pawn[team,piece].image_angle)+pawn[team,piece].y, 0, obj_bullet);
 		bullet.image_angle = pawn[team,piece].image_angle;
 		bullet.direction = bullet.image_angle;
-		bullet.speed = 2.5;
+		bullet.speed = 5;
+		show_debug_message("set Controler values");
+		obj_controler.selected_team = team;
+		obj_controler.selected_id = piece;
+		obj_controler.target_space = new_space;
+		return false;
 	}
-	return false;
+	return true;
 }
+return true;
 
 return true;
