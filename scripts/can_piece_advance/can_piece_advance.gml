@@ -24,6 +24,18 @@ for(i = 1; i < spaces; i++)
   if(not space_is_passable(count_forward(team, piece, i))) result = false;
 }
 
+//check if we are passing the home arrow
+if(pawn[team, piece].is_in_homerow and pawn[team,piece].destination + spaces > nest[team].last_home+1){
+	result = false;
+}
+
+
+if(pawn[team,piece].destination + spaces > nest[team].last_space){
+	if(pawn[team,piece].destination + spaces + nest[team].start_home - nest[team].last_space - 1 > nest[team].last_home+1){
+		result = false;
+	}
+}
+
 // check if the last space is landable
 if(result == true and not space_is_landable(count_forward(team, piece, spaces))) result = false;
 //if(!space_position[count_forward(team, piece, spaces)].safe && space_position[count_forward(team, piece, spaces)].occupants == 1 && space_position[count_forward(team, piece, spaces)].occupantsTeam != current_player) "Start a Battle" => callin a function;

@@ -32,35 +32,40 @@ start_space = nest[team].start_space; // the start space when leaving the nest
 last_space = nest[team].last_space; // the last space before turning into the home row
 start_home = nest[team].start_home; // the first space of the home row
 
+if(origin + advance == nest[team].last_home + 1){
+	result = pawn[team,piece].arrow_space;
+}else{
 // if the piece is in its nest, its only possible new destination is its start space
 // (all nest spaces have index numbers greater than 111)
-if(origin > 111)
-{
-	result = start_space;
-}
-// if the piece is not in its nest, then calculate its new destination
-else
-{
-	if(origin > last_space)
+	if(origin > 111)
 	{
-		if(origin+advance > 67)
-		{
-			result = origin + advance - 68;
-		}
-		else
-		{
-			result = origin + advance;
-		}
+		result = start_space;
 	}
+	// if the piece is not in its nest, then calculate its new destination
 	else
 	{
-		if(origin + advance > last_space)
+		if(origin > last_space)
 		{
-			result = origin + advance + start_home - last_space - 1;
+			if(origin+advance > 67 and !pawn[team, piece].is_in_homerow)
+			{
+				result = origin + advance - 68;
+			}
+			else
+			{
+				result = origin + advance;
+			}
 		}
-		else
+		else // turn into home row
 		{
-			result = origin + advance;
+			if(origin + advance > last_space)
+			{
+				result = origin + advance + start_home - last_space - 1;
+				pawn[team, piece].is_in_homerow = true;
+			}
+			else
+			{
+				result = origin + advance;
+			}
 		}
 	}
 }

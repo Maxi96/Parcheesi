@@ -43,7 +43,7 @@ pawn[team,piece].destination = new_space;
 // increment new space occupant
  space_position[new_space].occupants++;
  
- space_position[new_space].occupantsTeam = current_player;
+space_position[new_space].occupantsTeam = current_player;
  
 
 if(pawn[team,piece].is_in_nest)

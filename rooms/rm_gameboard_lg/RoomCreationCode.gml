@@ -414,6 +414,8 @@ for(i = 0; i <= 3; i++)
 	pawn[0,i].id_piece = i;
 	pawn[0,i].destination = 112 + i;
 	pawn[0,i].is_in_nest = true;
+	pawn[0,i].is_in_homerow = false;
+	pawn[0,i].arrow_space = 75 + i;
 	nest[0].occupants++;
 }
 
@@ -424,6 +426,8 @@ for(i = 0; i <= 3; i++)
 	pawn[1,i].id_piece = i;
 	pawn[1,i].destination = 116 + i;
 	pawn[1,i].is_in_nest = true;
+	pawn[1,i].is_in_homerow = false;
+	pawn[1,i].arrow_space = 86 + i;
 	nest[1].occupants++;
 }
 
@@ -434,6 +438,8 @@ for(i = 0; i <= 3; i++)
 	pawn[2,i].id_piece = i;
 	pawn[2,i].destination = 120 + i;
 	pawn[2,i].is_in_nest = true;
+	pawn[2,i].is_in_homerow = false;
+	pawn[2,i].arrow_space = 97 + i;
 	nest[2].occupants++;
 }
 
@@ -444,6 +450,8 @@ for(i = 0; i <= 3; i++)
 	pawn[3,i].id_piece = i;
 	pawn[3,i].destination = 124 + i;
 	pawn[3,i].is_in_nest = true;
+	pawn[3,i].is_in_homerow = false;
+	pawn[3,i].arrow_space = 108 + i;
 	nest[3].occupants++;
 }
 
