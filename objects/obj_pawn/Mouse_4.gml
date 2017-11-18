@@ -2,7 +2,7 @@
 
 show_debug_message("EVENT - LeftPressed - obj_pawn\n{");
 
-if(does_piece_belong_to_player(id_team, current_player))
+if(does_piece_belong_to_player(id_team, current_player) and good_dice)
 {
 // IS NEST | ROLLED | SELECT  |   |
 //  EMPTY  |  FIVE  | IN NEST | Y | comment
@@ -12,7 +12,7 @@ if(does_piece_belong_to_player(id_team, current_player))
 //    T    |    F   |    X    | T | impossible, no piece in nest
 //    T    |    F   |    F    | T | choose any piece
 //    F    |    T   |    T    | T | must take a piece out of nest
-//    F    |    T   |    F    | F | must take a piece out of nest
+//    F    |    T   |    F    | F | must take a piece out of nest ==> not working
 //    F    |    F   |    T    | F | can't take a piece out of nest
 //    F    |    F   |    F    | T | can't take a piece out of nest
 

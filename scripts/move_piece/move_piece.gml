@@ -42,6 +42,7 @@ for(i = 0; i <= 3; i++){
 pawn[team,piece].destination = new_space;
 // increment new space occupant
  space_position[new_space].occupants++;
+ 
  space_position[new_space].occupantsTeam = current_player;
  
 
