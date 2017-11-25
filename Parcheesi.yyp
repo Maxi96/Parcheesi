@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "13f29dc9-d21e-454d-8580-86a79de6a273",
+            "Value": {
+                "id": "07d3ee36-191f-4d81-b7a3-2c198dc9bdde",
+                "resourcePath": "scripts\\check_shot\\check_shot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "19551e62-8290-489e-a1a2-83fa82d11bed",
             "Value": {
                 "id": "bdbd4726-3ff3-45e9-a01e-52e50fd90dab",
@@ -172,6 +180,14 @@
                 "id": "61a3887a-eb26-409a-b049-8bb1251d3a32",
                 "resourcePath": "scripts\\can_piece_advance\\can_piece_advance.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "353dbc69-5d07-49c0-98b7-f320ca749bcb",
+            "Value": {
+                "id": "08283067-2d7a-4ed6-b635-06189d09520b",
+                "resourcePath": "objects\\obj_cross\\obj_cross.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -311,6 +327,14 @@
             }
         },
         {
+            "Key": "69426ff3-2e02-4252-b6f3-e7cd09cfb362",
+            "Value": {
+                "id": "78480cb8-da9b-4d0f-865f-c23e5b021e2a",
+                "resourcePath": "objects\\obj_battle_bar\\obj_battle_bar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "697dc566-bf61-4401-9b85-f012b3497c7c",
             "Value": {
                 "id": "a4e8b427-3774-4024-b168-779990f8d089",
@@ -371,6 +395,14 @@
             "Value": {
                 "id": "9d37f0ab-1c8c-4475-a41c-0965a3720b4d",
                 "resourcePath": "sprites\\spr_new_game\\spr_new_game.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "832e5241-133f-4f7b-ac1c-29458fec5f8a",
+            "Value": {
+                "id": "f4127456-3555-4464-9617-1005cefce3f3",
+                "resourcePath": "sprites\\spr_battle_bar\\spr_battle_bar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -805,6 +837,14 @@
                 "resourcePath": "scripts\\mark_die_used\\mark_die_used.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "fdee9ca9-0821-4885-a572-9b3707843e7b",
+            "Value": {
+                "id": "f4d2a084-4e05-4cef-9504-3439f90257e3",
+                "resourcePath": "sprites\\spr_cross\\spr_cross.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
@@ -838,7 +878,8 @@
         "f9d52666-102c-44fd-9804-e84bec8b9585",
         "bc005c47-7b9c-4716-82da-0b12622ec574",
         "b6f80751-22fb-41cb-94d1-dbb3728d6f9a",
-        "33167d18-eba3-4afc-98ef-3211a8b9a922"
+        "33167d18-eba3-4afc-98ef-3211a8b9a922",
+        "13f29dc9-d21e-454d-8580-86a79de6a273"
     ],
     "tutorial": ""
 }

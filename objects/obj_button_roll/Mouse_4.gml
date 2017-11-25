@@ -1,5 +1,10 @@
 /// @description Roll the dice.
 
+if(instance_exists(obj_cross)){
+	instance_destroy(cross);
+	instance_destroy(battle_bar);
+}
+
 //show_debug_message("EVENT - LeftPressed - obj_button_roll\n{");
 
 //raise_current_player_to_top(); // a temporary fix

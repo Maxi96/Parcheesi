@@ -435,7 +435,7 @@ for(i = 0; i <= 3; i++)
 
 for(i = 0; i <= 3; i++)
 {
-	pawn[2,i] = instance_create_layer(0,0, "safe", obj_pawn_orange);
+	pawn[2,i] = instance_create_layer(0,0, "Instances", obj_pawn_orange);
 	pawn[2,i].id_team = 2;
 	pawn[2,i].id_piece = i;
 	pawn[2,i].destination = 120 + i;
@@ -509,3 +509,7 @@ globalvar shot_move_value;
 globalvar current_shooter;
 globalvar selected_shooter;
 globalvar intended_destination;
+globalvar cross_speed;
+cross_speed = 2;
+globalvar cross;
+globalvar battle_bar;
