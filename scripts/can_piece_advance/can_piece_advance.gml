@@ -21,7 +21,7 @@ result = true;
 var i;
 for(i = 1; i < spaces; i++)
 {
-  if(not space_is_passable(count_forward(team, piece, i))) result = false;
+  if(!space_is_passable(count_forward(team, piece, i))) result = false;
 }
 
 //check if we are passing the home arrow

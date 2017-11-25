@@ -12,15 +12,16 @@ move_value = argument2;
 var old_space, new_space;
 old_space = pawn[team,piece].destination;
 new_space = count_forward(team, piece, move_value);
-// decrement old space occupant + 
+// decrement old space occupant  
 space_position[old_space].occupants--;
 pawn[team,piece].is_a_friend = false;
 pawn[team,piece].has_a_friend = false;
+space_position[old_space].blockade = false;
 
 var i, j;
 for(i = 0; i <= 3; i++){
 	for(j = 0; j <= 3; j++){
-		if(pawn[i,j].destination == pawn[team,piece].destination){
+		if(pawn[i,j].destination == pawn[team,piece].destination){	
 			pawn[i,j].has_a_friend = false;
 			pawn[i,j].is_a_friend = false;
 		}
@@ -36,6 +37,11 @@ for(i = 0; i <= 3; i++){
 	for(j = 0; j <= 3; j++){
 		if(pawn[i,j].destination == new_space){
 			pawn[i,j].has_a_friend = true;
+			
+			show_debug_message("Blackade team: " + string(team) + " i: " + string(i));
+			if(i == team){
+				space_position[new_space].blockade = true;
+			}
 		}
 	}
 }

@@ -16,7 +16,7 @@ move_possible = false;
 display_x = 706;
 display_y = 128;
 
-if(pawn[team,piece].is_in_nest and rolled_five())
+if(pawn[team,piece].is_in_nest and rolled_five() and space_position[nest[team].start_space].occupants < 2)
 {
 	make_move_button(display_x,display_y, 0, 5);
 }

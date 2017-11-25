@@ -20,8 +20,7 @@ if(does_piece_belong_to_player(id_team, current_player) and good_dice)
 	(
 		not is_nest_empty(current_player) and
 			(
-				(rolled_five() and not pawn[current_player, id_piece].is_in_nest) or
-				(not rolled_five() and pawn[current_player, id_piece].is_in_nest)
+				(rolled_five() and not pawn[current_player, id_piece].is_in_nest and space_position[nest[current_player].start_space].occupants < 2) or (not rolled_five() and pawn[current_player, id_piece].is_in_nest)
 			)
 	)
 	{

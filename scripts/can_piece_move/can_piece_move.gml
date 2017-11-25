@@ -17,6 +17,8 @@ result = false;
 // if the piece is in the nest, and five was rolled, then that piece has an available move
 if(pawn[team,piece].is_in_nest)
 {
+	
+	show_debug_message("Start space: " + string(nest[team].start_space) + "Occupants at start space: " + string(space_position[nest[team].start_space].occupants));
 	if(rolled_five())
 	{
 		result = true;
