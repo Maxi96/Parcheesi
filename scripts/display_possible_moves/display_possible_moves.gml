@@ -7,7 +7,7 @@ var team, piece;
 team = argument0;
 piece = argument1;
 
-show_debug_message("display_possible_moves(" + string(team) + ", " + string(piece) + ")\n{");
+//show_debug_message("display_possible_moves(" + string(team) + ", " + string(piece) + ")\n{");
 
 instance_destroy(obj_move_n);
 
@@ -58,4 +58,4 @@ else
 	}
 }
 
-show_debug_message("}\n -- display_possible_moves(" + string(team) + ", " + string(piece) + ")");
+//show_debug_message("}\n -- display_possible_moves(" + string(team) + ", " + string(piece) + ")");

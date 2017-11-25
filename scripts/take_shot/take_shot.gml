@@ -36,7 +36,7 @@ if(space_position[new_space].occupants == 1 and space_position[new_space].safe =
 		bullet.image_angle = pawn[team,piece].image_angle;
 		bullet.direction = bullet.image_angle;
 		bullet.speed = 5;
-		show_debug_message("set Controler values");
+		//show_debug_message("set Controler values");
 		obj_controler.selected_team = team;
 		obj_controler.selected_id = piece;
 		obj_controler.target_space = new_space;

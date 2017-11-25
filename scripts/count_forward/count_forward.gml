@@ -15,7 +15,7 @@ team = argument0;
 piece = argument1;
 advance = argument2;
 
-show_debug_message("count_forward(" + string(team) + ", " + string(piece) + ", " + string(advance) + ")\n{");
+//show_debug_message("count_forward(" + string(team) + ", " + string(piece) + ", " + string(advance) + ")\n{");
 
 // a negative index will cause an error if the logic below is faulty
 var result;
@@ -34,6 +34,7 @@ start_home = nest[team].start_home; // the first space of the home row
 
 if(origin + advance == nest[team].last_home + 1){
 	result = pawn[team,piece].arrow_space;
+	pawn[team, piece].is_in_arrow = true;
 }else{
 // if the piece is in its nest, its only possible new destination is its start space
 // (all nest spaces have index numbers greater than 111)
@@ -70,9 +71,6 @@ if(origin + advance == nest[team].last_home + 1){
 	}
 }
 
-// TODO move pieces from the home row to the home arrow (exact roll required)
-// TODO make sure that pieces don't move out out the home arrow
-
-show_debug_message("} -- count_forward(" + string(team) + ", " + string(piece) + ", " + string(advance) + ") RETURNS " + string(result));
+//show_debug_message("} -- count_forward(" + string(team) + ", " + string(piece) + ", " + string(advance) + ") RETURNS " + string(result));
 
 return result;

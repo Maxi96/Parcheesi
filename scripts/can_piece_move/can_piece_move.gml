@@ -8,8 +8,8 @@ var team, piece;
 team = argument0;
 piece = argument1;
 
-show_debug_message("can_piece_move(" + string(team) + "," + string(piece) + ")\n{");
-show_debug_message("\tcan_piece_move() SAYS: piece is in nest: " + string(pawn[team,piece].is_in_nest));
+//show_debug_message("can_piece_move(" + string(team) + "," + string(piece) + ")\n{");
+//show_debug_message("\tcan_piece_move() SAYS: piece is in nest: " + string(pawn[team,piece].is_in_nest));
 // assume that the piece can not move
 var result;
 result = false;
@@ -33,6 +33,6 @@ else
 	  if(die[d].value > 0 and can_piece_advance(team, piece, die[d].value)) result = true;
 }
 
-show_debug_message("} -- can_piece_move(" + string(team) + "," + string(piece) + ") RETURNS " + string(result));
+//show_debug_message("} -- can_piece_move(" + string(team) + "," + string(piece) + ") RETURNS " + string(result));
 
 return result;

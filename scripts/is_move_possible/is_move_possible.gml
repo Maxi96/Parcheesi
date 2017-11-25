@@ -2,7 +2,7 @@
 /// @description check to see if the current player has any possible moves.
 /// @return true if the current player has a possible move, otherwise false
 
-show_debug_message("is_move_possible()\n{");
+//show_debug_message("is_move_possible()\n{");
 
 // assume the the current player has no possible moves
 var result;
@@ -16,6 +16,6 @@ for(i = 0; i < 4; i++)
 	if(can_piece_move(current_player, i)) result = true;
 }
 
-show_debug_message("} -- is_move_possible() RETURNS " + string(result));
+//show_debug_message("} -- is_move_possible() RETURNS " + string(result));
 
 return result;

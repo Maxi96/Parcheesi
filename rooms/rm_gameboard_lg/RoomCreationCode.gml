@@ -416,6 +416,7 @@ for(i = 0; i <= 3; i++)
 	pawn[0,i].is_in_nest = true;
 	pawn[0,i].is_in_homerow = false;
 	pawn[0,i].arrow_space = 75 + i;
+	pawn[0,i].is_in_arrow = false;
 	nest[0].occupants++;
 }
 
@@ -428,18 +429,20 @@ for(i = 0; i <= 3; i++)
 	pawn[1,i].is_in_nest = true;
 	pawn[1,i].is_in_homerow = false;
 	pawn[1,i].arrow_space = 86 + i;
+	pawn[1,i].is_in_arrow = false;
 	nest[1].occupants++;
 }
 
 for(i = 0; i <= 3; i++)
 {
-	pawn[2,i] = instance_create_layer(0,0, "Instances", obj_pawn_orange);
+	pawn[2,i] = instance_create_layer(0,0, "safe", obj_pawn_orange);
 	pawn[2,i].id_team = 2;
 	pawn[2,i].id_piece = i;
 	pawn[2,i].destination = 120 + i;
 	pawn[2,i].is_in_nest = true;
 	pawn[2,i].is_in_homerow = false;
 	pawn[2,i].arrow_space = 97 + i;
+	pawn[2,i].is_in_arrow = false;
 	nest[2].occupants++;
 }
 
@@ -452,6 +455,7 @@ for(i = 0; i <= 3; i++)
 	pawn[3,i].is_in_nest = true;
 	pawn[3,i].is_in_homerow = false;
 	pawn[3,i].arrow_space = 108 + i;
+	pawn[3,i].is_in_arrow = false;
 	nest[3].occupants++;
 }
 

@@ -7,7 +7,7 @@
 var space_number;
 space_number = argument0;
 
-show_debug_message("space_is_landable(" + string(space_number) + ")\n{");
+//show_debug_message("space_is_landable(" + string(space_number) + ")\n{");
 
 // assume that the space is landable
 var result;
@@ -18,6 +18,6 @@ if(space_position[space_number].blockade) result = false;
 // if the space already contains 2 pieces, then it is not landable
 if(space_position[space_number].occupants >= 2) result = false;
  
-show_debug_message("} -- space_is_landable(" + string(space_number) + ") RETURNS " + string(result));
+//show_debug_message("} -- space_is_landable(" + string(space_number) + ") RETURNS " + string(result));
 
 return result;

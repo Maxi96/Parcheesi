@@ -10,7 +10,7 @@ team = argument0;
 piece = argument1;
 spaces = argument2;
 
-show_debug_message("can_piece_advance(" + string(team) + ", " + string(piece) + ", " + string(spaces) + ")\n{");
+//show_debug_message("can_piece_advance(" + string(team) + ", " + string(piece) + ", " + string(spaces) + ")\n{");
 
 // assume that the piece can advance the given number of spaces
 var result;
@@ -29,17 +29,14 @@ if(pawn[team, piece].is_in_homerow and pawn[team,piece].destination + spaces > n
 	result = false;
 }
 
-
-if(pawn[team,piece].destination + spaces > nest[team].last_space){
-	if(pawn[team,piece].destination + spaces + nest[team].start_home - nest[team].last_space - 1 > nest[team].last_home+1){
-		result = false;
-	}
+//check if piece is ging to have a higher number than arrow
+if(count_forward(team, piece, i) > pawn[team,piece].arrow_space - piece and !pawn[team,piece].is_in_arrow){
+	result = false;
 }
 
 // check if the last space is landable
 if(result == true and not space_is_landable(count_forward(team, piece, spaces))) result = false;
-//if(!space_position[count_forward(team, piece, spaces)].safe && space_position[count_forward(team, piece, spaces)].occupants == 1 && space_position[count_forward(team, piece, spaces)].occupantsTeam != current_player) "Start a Battle" => callin a function;
 
-show_debug_message("} -- can_piece_advance(" + string(team) + ", " + string(piece) + ", " + string(spaces) + ") RETURNS " + string(result));
+//show_debug_message("} -- can_piece_advance(" + string(team) + ", " + string(piece) + ", " + string(spaces) + ") RETURNS " + string(result));
 
 return result;

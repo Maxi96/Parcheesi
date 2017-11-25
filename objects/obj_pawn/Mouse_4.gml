@@ -1,6 +1,6 @@
 /// @description Select a piece.
 
-show_debug_message("EVENT - LeftPressed - obj_pawn\n{");
+//show_debug_message("EVENT - LeftPressed - obj_pawn\n{");
 
 if(does_piece_belong_to_player(id_team, current_player) and good_dice)
 {
@@ -26,7 +26,7 @@ if(does_piece_belong_to_player(id_team, current_player) and good_dice)
 	)
 	{
 		// TODO play negative sound
-		show_debug_message("current_player = " + string(current_player) + "\n pawn is in nest: " +  string(pawn[current_player, id_piece].is_in_nest) + "\n is nest empty: " + string(is_nest_empty(current_player)) + "\n current nest occupants: " + string(nest[current_player].occupants));
+		//show_debug_message("current_player = " + string(current_player) + "\n pawn is in nest: " +  string(pawn[current_player, id_piece].is_in_nest) + "\n is nest empty: " + string(is_nest_empty(current_player)) + "\n current nest occupants: " + string(nest[current_player].occupants));
 	}
 	else
 	{
@@ -35,4 +35,4 @@ if(does_piece_belong_to_player(id_team, current_player) and good_dice)
 	}
 }
 
-show_debug_message("} -- EVENT - LeftPressed - obj_pawn");
+//show_debug_message("} -- EVENT - LeftPressed - obj_pawn");
