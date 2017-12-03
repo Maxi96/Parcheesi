@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "4bc95bbc-b11b-42cc-a07e-e10c9c3a990c",
+            "Value": {
+                "id": "81a0e848-6935-4b79-8983-bd770928eda2",
+                "resourcePath": "sprites\\spr_army_bg\\spr_army_bg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4eb8b739-ae9c-4285-b59c-7e0b39c6a4d3",
             "Value": {
                 "id": "5d1cb779-1496-4f8a-86d4-185595542571",
