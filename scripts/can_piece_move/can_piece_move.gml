@@ -18,7 +18,7 @@ result = false;
 if(pawn[team,piece].is_in_nest)
 {
 	
-	show_debug_message("Start space: " + string(nest[team].start_space) + "Occupants at start space: " + string(space_position[nest[team].start_space].occupants));
+	//show_debug_message("Start space: " + string(nest[team].start_space) + "Occupants at start space: " + string(space_position[nest[team].start_space].occupants));
 	if(rolled_five())
 	{
 		result = true;

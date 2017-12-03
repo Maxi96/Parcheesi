@@ -1,8 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-obj_controler.victim_space = destination;
+with(other) instance_destroy();
+instance_destroy(cross);
+instance_destroy(battle_bar);
 
+obj_controler.victim_space = destination;
+var i,j;
 if(!is_in_arrow){
 	switch(id_team){
 	
