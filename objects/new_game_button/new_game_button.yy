@@ -5,7 +5,7 @@
     "name": "new_game_button",
     "eventList": [
         {
-            "id": "e7373072-649f-4e1a-a8eb-5ec68a373c43",
+            "id": "83124a20-72ef-48f9-bee2-8e44594b5d56",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,

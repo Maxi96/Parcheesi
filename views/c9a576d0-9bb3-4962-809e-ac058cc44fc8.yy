@@ -8,7 +8,8 @@
         "bf84a1d8-3c7e-47b9-be73-d7a99db628fe",
         "cbf4aef2-079c-4bb2-8142-ef4b781230a5",
         "5642bb36-59bc-47fd-b282-1d0e51d7b5bc",
-        "643eb6c7-63c4-4ca4-aba0-4e9af1ccd3aa"
+        "643eb6c7-63c4-4ca4-aba0-4e9af1ccd3aa",
+        "21d10f63-e2b7-4e9c-9ae0-77e30764700e"
     ],
     "filterType": "GMSprite",
     "folderName": "main_menu",

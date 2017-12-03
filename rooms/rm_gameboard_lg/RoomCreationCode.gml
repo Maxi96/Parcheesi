@@ -3,6 +3,8 @@
 show_debug_message("EVENT - Create - rm_gameboard_lg\n{");
 randomize();
 
+audio_play_sound(game_bg_music,1,true);
+
 globalvar setting_quick_start;
 setting_quick_start = true;
 

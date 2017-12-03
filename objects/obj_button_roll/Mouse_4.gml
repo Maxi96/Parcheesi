@@ -1,5 +1,7 @@
 /// @description Roll the dice.
 
+audio_play_sound(dice_rolling_effect,1,false)
+
 if(instance_exists(obj_cross)){
 	instance_destroy(cross);
 	instance_destroy(battle_bar);

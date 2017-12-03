@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "124cf580-cbc1-4cc6-b3c7-78b0f02c4368",
+            "Value": {
+                "id": "7b089d36-6c48-445c-8c15-e23d52d27a29",
+                "resourcePath": "objects\\obj_tbg_music\\obj_tbg_music.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "13f29dc9-d21e-454d-8580-86a79de6a273",
             "Value": {
                 "id": "07d3ee36-191f-4d81-b7a3-2c198dc9bdde",
@@ -76,6 +84,14 @@
                 "id": "58908c82-f68f-42e7-853c-f931ffcc2cdf",
                 "resourcePath": "views\\1c0a4e95-7042-4c28-a9da-e490df84b902.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "21d10f63-e2b7-4e9c-9ae0-77e30764700e",
+            "Value": {
+                "id": "0fd71e8a-b0e0-41a4-9e92-dac26bcaa748",
+                "resourcePath": "sprites\\spr_title\\spr_title.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -239,6 +255,14 @@
             }
         },
         {
+            "Key": "4eb8b739-ae9c-4285-b59c-7e0b39c6a4d3",
+            "Value": {
+                "id": "5d1cb779-1496-4f8a-86d4-185595542571",
+                "resourcePath": "sounds\\bg_music\\bg_music.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "52b7ccdd-e289-4886-808d-8febb1416730",
             "Value": {
                 "id": "31971f43-7c38-4b4a-ac00-d9d8c0a633a4",
@@ -327,6 +351,14 @@
             }
         },
         {
+            "Key": "69002518-1e87-45cd-a7d1-35d4c528ebab",
+            "Value": {
+                "id": "c9fd1cef-246d-4fae-8bed-b53724cfa7aa",
+                "resourcePath": "sounds\\tank_fire_effect\\tank_fire_effect.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "69426ff3-2e02-4252-b6f3-e7cd09cfb362",
             "Value": {
                 "id": "78480cb8-da9b-4d0f-865f-c23e5b021e2a",
@@ -372,6 +404,14 @@
                 "id": "37da2569-e912-41a1-bed0-d79dafcfdacf",
                 "resourcePath": "scripts\\is_nest_empty\\is_nest_empty.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7972e8fa-820c-40fa-a7f4-b509e43153e7",
+            "Value": {
+                "id": "cea2dc58-59cb-47d7-9abe-36835628a75e",
+                "resourcePath": "objects\\obj_title\\obj_title.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -468,6 +508,14 @@
                 "id": "ee0f0d95-97ef-4f68-a692-d8a4c1af7c17",
                 "resourcePath": "scripts\\destroy_all_move_buttons\\destroy_all_move_buttons.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "911ef806-1141-4d42-86e2-3d5a4cb7a0b6",
+            "Value": {
+                "id": "3624a7f8-2037-4b89-9601-56d7baf010fc",
+                "resourcePath": "sounds\\dice_rolling_effect\\dice_rolling_effect.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -764,6 +812,14 @@
                 "id": "39bbaa51-c750-4a54-b49f-6e4e82bf2548",
                 "resourcePath": "rooms\\rm_gameboard_med\\rm_gameboard_med.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "ddb6fe08-f224-4260-b1f1-ff52b068f9fb",
+            "Value": {
+                "id": "4b497521-e3be-45c0-8b1b-950fb53f81b3",
+                "resourcePath": "sounds\\game_bg_music\\game_bg_music.yy",
+                "resourceType": "GMSound"
             }
         },
         {
