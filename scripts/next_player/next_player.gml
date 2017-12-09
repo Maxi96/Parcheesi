@@ -6,7 +6,10 @@
 
 instance_destroy(obj_selection);
 
-current_player++;
+if(!rolled_double){
+	current_player++;
+}
+rolled_double = false;
 if(current_player > 3) current_player -= 4;	
 good_dice = false;
 instance_activate_object(button_roll);

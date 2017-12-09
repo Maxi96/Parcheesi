@@ -30,5 +30,3 @@ if(space_position[new_space].occupants == 1 and space_position[new_space].safe =
 	return true;
 }
 return true;
-
-return true;

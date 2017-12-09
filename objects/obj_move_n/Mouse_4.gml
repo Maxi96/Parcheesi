@@ -13,3 +13,4 @@ if(is_move_possible())
 else
 	next_player();
 
+instance_destroy(obj_selection);

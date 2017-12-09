@@ -515,3 +515,5 @@ globalvar cross_speed;
 cross_speed = 2;
 globalvar cross;
 globalvar battle_bar;
+globalvar rolled_double;
+rolled_double = false;
