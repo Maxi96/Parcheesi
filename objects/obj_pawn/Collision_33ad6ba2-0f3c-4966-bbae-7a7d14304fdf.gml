@@ -6,10 +6,10 @@ instance_destroy(cross);
 instance_destroy(battle_bar);
 
 obj_controler.victim_space = destination;
+
 var i,j;
 if(!is_in_arrow){
 	switch(id_team){
-	
 		case 0:
 		space_position[destination].occupants--;
 		for(i = 0; i <= 3; i++){
@@ -68,3 +68,4 @@ if(!is_in_arrow){
 		break;
 	}
 }
+

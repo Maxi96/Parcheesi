@@ -27,7 +27,7 @@ for(i = 0; i <= 3; i++){
 		}
 	}
 }
-
+show_debug_message("New Space occupants: " + string(space_position[new_space].occupants));
 // move piece to new space
 if(space_position[new_space].occupants > 0){
 	pawn[team,piece].is_a_friend = true;
@@ -38,7 +38,7 @@ for(i = 0; i <= 3; i++){
 		if(pawn[i,j].destination == new_space){
 			pawn[i,j].has_a_friend = true;
 			
-			show_debug_message("Blackade team: " + string(team) + " i: " + string(i));
+			show_debug_message("Blockade team: " + string(team) + " i: " + string(i));
 			if(i == team){
 				space_position[new_space].blockade = true;
 			}

@@ -41,7 +41,7 @@ if( point_distance(x,y, distanaionx,distanaiony) > 1 )
 	// if we are already facing in the right direction, then start moving
 	else
 	{
-		motion_set(image_angle,2);
+		motion_set(image_angle, 2);
 	}
 }
 // if we are at our destination, then stop and make sure we are exactly at our destination

@@ -28,4 +28,4 @@ bullet = instance_create_depth(40*dcos(pawn[current_shooter,selected_shooter].im
 bullet.image_angle = pawn[current_shooter,selected_shooter].image_angle;
 bullet.direction = bullet.image_angle;
 audio_play_sound(tank_fire_effect,1,false);
-bullet.speed = 7;
+bullet.speed = 8;

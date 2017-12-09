@@ -2,7 +2,7 @@
 
 audio_play_sound(dice_rolling_effect,1,false)
 
-if(instance_exists(obj_cross)){
+if(instance_exists(obj_cross) or instance_exists(obj_battle_bar)){
 	instance_destroy(cross);
 	instance_destroy(battle_bar);
 }
